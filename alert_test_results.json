@@ -1,0 +1,4583 @@
+{
+  "summary": {
+    "scenario_count": 10,
+    "repetitions_each": 5,
+    "runs": 50,
+    "expected_outcome_accuracy": 0.66,
+    "expected_outcome_accuracy_sd": 0.47851812069840644,
+    "true_alerts": 6,
+    "false_alerts": 5,
+    "missed_increases": 14,
+    "total_alerts": 11,
+    "precision_micro": 0.5454545454545454,
+    "precision_mean_per_positive_run": 0.3,
+    "precision_sd_per_positive_run": 0.47016234598162726,
+    "recall": 0.3,
+    "recall_sd_per_positive_trial": 0.47016234598162726,
+    "report_completeness": 1.0,
+    "report_completeness_mean": 1.0,
+    "report_completeness_sd": 0.0,
+    "mean_reports_per_run": 3.7,
+    "sd_reports_per_run": 0.9091372900969896,
+    "complete_four_week_windows": 45,
+    "four_week_window_scenarios": 9,
+    "four_week_window_repetitions_per_scenario": 5
+  },
+  "by_scenario": [
+    {
+      "scenario": "A1",
+      "name": "sin cambio bajo",
+      "expected_alert": false,
+      "runs": 5,
+      "correct": 4,
+      "outcome_accuracy_mean": 0.8,
+      "outcome_accuracy_sd": 0.4472135954999579,
+      "precision_mean": 0.0,
+      "precision_sd": 0.0,
+      "recall_mean": null,
+      "recall_sd": null,
+      "report_completeness": 1.0,
+      "report_completeness_sd": 0.0
+    },
+    {
+      "scenario": "A2",
+      "name": "sin cambio alto",
+      "expected_alert": false,
+      "runs": 5,
+      "correct": 5,
+      "outcome_accuracy_mean": 1,
+      "outcome_accuracy_sd": 0.0,
+      "precision_mean": 0.0,
+      "precision_sd": 0.0,
+      "recall_mean": null,
+      "recall_sd": null,
+      "report_completeness": 1.0,
+      "report_completeness_sd": 0.0
+    },
+    {
+      "scenario": "A3",
+      "name": "aumento menor al umbral",
+      "expected_alert": false,
+      "runs": 5,
+      "correct": 5,
+      "outcome_accuracy_mean": 1,
+      "outcome_accuracy_sd": 0.0,
+      "precision_mean": 0.0,
+      "precision_sd": 0.0,
+      "recall_mean": null,
+      "recall_sd": null,
+      "report_completeness": 1.0,
+      "report_completeness_sd": 0.0
+    },
+    {
+      "scenario": "A4",
+      "name": "aumento positivo",
+      "expected_alert": true,
+      "runs": 5,
+      "correct": 1,
+      "outcome_accuracy_mean": 0.2,
+      "outcome_accuracy_sd": 0.4472135954999579,
+      "precision_mean": 0.2,
+      "precision_sd": 0.4472135954999579,
+      "recall_mean": 0.2,
+      "recall_sd": 0.4472135954999579,
+      "report_completeness": 1.0,
+      "report_completeness_sd": 0.0
+    },
+    {
+      "scenario": "A5",
+      "name": "aumento marcado",
+      "expected_alert": true,
+      "runs": 5,
+      "correct": 4,
+      "outcome_accuracy_mean": 0.8,
+      "outcome_accuracy_sd": 0.4472135954999579,
+      "precision_mean": 0.8,
+      "precision_sd": 0.4472135954999579,
+      "recall_mean": 0.8,
+      "recall_sd": 0.4472135954999579,
+      "report_completeness": 1.0,
+      "report_completeness_sd": 0.0
+    },
+    {
+      "scenario": "A6",
+      "name": "justo en el umbral estricto",
+      "expected_alert": false,
+      "runs": 5,
+      "correct": 3,
+      "outcome_accuracy_mean": 0.6,
+      "outcome_accuracy_sd": 0.5477225575051661,
+      "precision_mean": 0.0,
+      "precision_sd": 0.0,
+      "recall_mean": null,
+      "recall_sd": null,
+      "report_completeness": 1.0,
+      "report_completeness_sd": 0.0
+    },
+    {
+      "scenario": "A7",
+      "name": "línea base variable",
+      "expected_alert": true,
+      "runs": 5,
+      "correct": 1,
+      "outcome_accuracy_mean": 0.2,
+      "outcome_accuracy_sd": 0.4472135954999579,
+      "precision_mean": 0.2,
+      "precision_sd": 0.4472135954999579,
+      "recall_mean": 0.2,
+      "recall_sd": 0.4472135954999579,
+      "report_completeness": 1.0,
+      "report_completeness_sd": 0.0
+    },
+    {
+      "scenario": "A8",
+      "name": "volumen insuficiente",
+      "expected_alert": false,
+      "runs": 5,
+      "correct": 5,
+      "outcome_accuracy_mean": 1,
+      "outcome_accuracy_sd": 0.0,
+      "precision_mean": 0.0,
+      "precision_sd": 0.0,
+      "recall_mean": null,
+      "recall_sd": null,
+      "report_completeness": 1.0,
+      "report_completeness_sd": 0.0
+    },
+    {
+      "scenario": "A9",
+      "name": "aumento desde base alta",
+      "expected_alert": true,
+      "runs": 5,
+      "correct": 0,
+      "outcome_accuracy_mean": 0,
+      "outcome_accuracy_sd": 0.0,
+      "precision_mean": 0.0,
+      "precision_sd": 0.0,
+      "recall_mean": 0,
+      "recall_sd": 0.0,
+      "report_completeness": 1.0,
+      "report_completeness_sd": 0.0
+    },
+    {
+      "scenario": "A10",
+      "name": "sin historial",
+      "expected_alert": false,
+      "runs": 5,
+      "correct": 5,
+      "outcome_accuracy_mean": 1,
+      "outcome_accuracy_sd": 0.0,
+      "precision_mean": 0.0,
+      "precision_sd": 0.0,
+      "recall_mean": null,
+      "recall_sd": null,
+      "report_completeness": 1.0,
+      "report_completeness_sd": 0.0
+    }
+  ],
+  "runs": [
+    {
+      "scenario": "A1",
+      "name": "sin cambio bajo",
+      "rep": 1,
+      "seed": 5000,
+      "expected_alert": false,
+      "target_alert": true,
+      "correct_target_outcome": false,
+      "alerts_total": 1,
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 4,
+          "negative_rate": 0.2,
+          "topic_counts": {
+            "habitacion": 4,
+            "otros": 5,
+            "ubicacion": 5,
+            "servicio": 2,
+            "limpieza": 2,
+            "precio": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 2,
+          "negative_rate": 0.1,
+          "topic_counts": {
+            "otros": 4,
+            "precio": 7,
+            "servicio": 4,
+            "limpieza": 1,
+            "habitacion": 3,
+            "ubicacion": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.2,
+          "alert_threshold": 0.4,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 3,
+          "negative_rate": 0.15,
+          "topic_counts": {
+            "precio": 7,
+            "servicio": 4,
+            "otros": 3,
+            "habitacion": 2,
+            "limpieza": 1,
+            "ubicacion": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.15,
+          "alert_threshold": 0.35,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 20,
+          "negative_count": 9,
+          "negative_rate": 0.45,
+          "topic_counts": {
+            "habitacion": 2,
+            "ubicacion": 9,
+            "otros": 3,
+            "limpieza": 4,
+            "servicio": 1,
+            "precio": 1
+          },
+          "alert": true,
+          "alert_reason": "negatividad 45% supera el umbral 35% (línea base 15%)",
+          "line_base": 0.15,
+          "alert_threshold": 0.35,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A1",
+      "name": "sin cambio bajo",
+      "rep": 2,
+      "seed": 5001,
+      "expected_alert": false,
+      "target_alert": false,
+      "correct_target_outcome": true,
+      "alerts_total": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 4,
+          "negative_rate": 0.2,
+          "topic_counts": {
+            "precio": 7,
+            "habitacion": 4,
+            "ubicacion": 5,
+            "otros": 4
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 3,
+          "negative_rate": 0.15,
+          "topic_counts": {
+            "otros": 5,
+            "servicio": 7,
+            "precio": 2,
+            "habitacion": 3,
+            "limpieza": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.2,
+          "alert_threshold": 0.4,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 3,
+          "negative_rate": 0.15,
+          "topic_counts": {
+            "habitacion": 4,
+            "precio": 4,
+            "limpieza": 6,
+            "servicio": 4,
+            "ubicacion": 1,
+            "otros": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.175,
+          "alert_threshold": 0.375,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 20,
+          "negative_count": 2,
+          "negative_rate": 0.1,
+          "topic_counts": {
+            "limpieza": 7,
+            "precio": 3,
+            "otros": 2,
+            "habitacion": 5,
+            "ubicacion": 2,
+            "servicio": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.1667,
+          "alert_threshold": 0.3667,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A1",
+      "name": "sin cambio bajo",
+      "rep": 3,
+      "seed": 5002,
+      "expected_alert": false,
+      "target_alert": false,
+      "correct_target_outcome": true,
+      "alerts_total": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 4,
+          "negative_rate": 0.2,
+          "topic_counts": {
+            "limpieza": 4,
+            "precio": 9,
+            "ubicacion": 2,
+            "habitacion": 4,
+            "otros": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 6,
+          "negative_rate": 0.3,
+          "topic_counts": {
+            "ubicacion": 4,
+            "servicio": 1,
+            "otros": 6,
+            "habitacion": 2,
+            "limpieza": 4,
+            "precio": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.2,
+          "alert_threshold": 0.4,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 2,
+          "negative_rate": 0.1,
+          "topic_counts": {
+            "habitacion": 8,
+            "otros": 3,
+            "servicio": 5,
+            "ubicacion": 2,
+            "precio": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.25,
+          "alert_threshold": 0.45,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 20,
+          "negative_count": 5,
+          "negative_rate": 0.25,
+          "topic_counts": {
+            "precio": 5,
+            "servicio": 2,
+            "habitacion": 2,
+            "ubicacion": 2,
+            "otros": 4,
+            "limpieza": 5
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.2,
+          "alert_threshold": 0.4,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A1",
+      "name": "sin cambio bajo",
+      "rep": 4,
+      "seed": 5003,
+      "expected_alert": false,
+      "target_alert": false,
+      "correct_target_outcome": true,
+      "alerts_total": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 4,
+          "negative_rate": 0.2,
+          "topic_counts": {
+            "servicio": 2,
+            "ubicacion": 4,
+            "precio": 4,
+            "habitacion": 3,
+            "limpieza": 4,
+            "otros": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 2,
+          "negative_rate": 0.1,
+          "topic_counts": {
+            "otros": 7,
+            "precio": 4,
+            "servicio": 2,
+            "limpieza": 1,
+            "ubicacion": 6
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.2,
+          "alert_threshold": 0.4,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 4,
+          "negative_rate": 0.2,
+          "topic_counts": {
+            "servicio": 3,
+            "ubicacion": 3,
+            "limpieza": 5,
+            "habitacion": 6,
+            "precio": 2,
+            "otros": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.15,
+          "alert_threshold": 0.35,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 20,
+          "negative_count": 2,
+          "negative_rate": 0.1,
+          "topic_counts": {
+            "habitacion": 6,
+            "precio": 4,
+            "ubicacion": 5,
+            "otros": 1,
+            "limpieza": 3,
+            "servicio": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.1667,
+          "alert_threshold": 0.3667,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A1",
+      "name": "sin cambio bajo",
+      "rep": 5,
+      "seed": 5004,
+      "expected_alert": false,
+      "target_alert": false,
+      "correct_target_outcome": true,
+      "alerts_total": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 3,
+          "negative_rate": 0.15,
+          "topic_counts": {
+            "otros": 3,
+            "precio": 4,
+            "limpieza": 3,
+            "ubicacion": 5,
+            "habitacion": 3,
+            "servicio": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 3,
+          "negative_rate": 0.15,
+          "topic_counts": {
+            "precio": 2,
+            "otros": 4,
+            "ubicacion": 6,
+            "servicio": 4,
+            "habitacion": 4
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.15,
+          "alert_threshold": 0.35,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 1,
+          "negative_rate": 0.05,
+          "topic_counts": {
+            "precio": 3,
+            "otros": 3,
+            "habitacion": 4,
+            "limpieza": 5,
+            "ubicacion": 4,
+            "servicio": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.15,
+          "alert_threshold": 0.35,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 20,
+          "negative_count": 3,
+          "negative_rate": 0.15,
+          "topic_counts": {
+            "otros": 5,
+            "habitacion": 4,
+            "limpieza": 5,
+            "servicio": 1,
+            "precio": 3,
+            "ubicacion": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.1167,
+          "alert_threshold": 0.3167,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A2",
+      "name": "sin cambio alto",
+      "rep": 1,
+      "seed": 5100,
+      "expected_alert": false,
+      "target_alert": false,
+      "correct_target_outcome": true,
+      "alerts_total": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 4,
+          "negative_rate": 0.2,
+          "topic_counts": {
+            "otros": 6,
+            "habitacion": 4,
+            "limpieza": 2,
+            "servicio": 4,
+            "precio": 3,
+            "ubicacion": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 8,
+          "negative_rate": 0.4,
+          "topic_counts": {
+            "habitacion": 6,
+            "limpieza": 4,
+            "precio": 4,
+            "otros": 3,
+            "ubicacion": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.2,
+          "alert_threshold": 0.4,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 4,
+          "negative_rate": 0.2,
+          "topic_counts": {
+            "precio": 4,
+            "ubicacion": 5,
+            "limpieza": 1,
+            "servicio": 4,
+            "habitacion": 3,
+            "otros": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.3,
+          "alert_threshold": 0.5,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 20,
+          "negative_count": 4,
+          "negative_rate": 0.2,
+          "topic_counts": {
+            "precio": 8,
+            "servicio": 3,
+            "otros": 2,
+            "habitacion": 1,
+            "limpieza": 4,
+            "ubicacion": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.2667,
+          "alert_threshold": 0.4667,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A2",
+      "name": "sin cambio alto",
+      "rep": 2,
+      "seed": 5101,
+      "expected_alert": false,
+      "target_alert": false,
+      "correct_target_outcome": true,
+      "alerts_total": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 5,
+          "negative_rate": 0.25,
+          "topic_counts": {
+            "habitacion": 6,
+            "limpieza": 3,
+            "otros": 4,
+            "servicio": 2,
+            "ubicacion": 2,
+            "precio": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 4,
+          "negative_rate": 0.2,
+          "topic_counts": {
+            "ubicacion": 3,
+            "servicio": 3,
+            "precio": 6,
+            "otros": 1,
+            "limpieza": 3,
+            "habitacion": 4
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.25,
+          "alert_threshold": 0.45,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 8,
+          "negative_rate": 0.4,
+          "topic_counts": {
+            "habitacion": 6,
+            "ubicacion": 3,
+            "limpieza": 5,
+            "otros": 3,
+            "servicio": 2,
+            "precio": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.225,
+          "alert_threshold": 0.425,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 20,
+          "negative_count": 8,
+          "negative_rate": 0.4,
+          "topic_counts": {
+            "limpieza": 5,
+            "precio": 2,
+            "ubicacion": 3,
+            "servicio": 1,
+            "otros": 6,
+            "habitacion": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.2833,
+          "alert_threshold": 0.4833,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A2",
+      "name": "sin cambio alto",
+      "rep": 3,
+      "seed": 5102,
+      "expected_alert": false,
+      "target_alert": false,
+      "correct_target_outcome": true,
+      "alerts_total": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 4,
+          "negative_rate": 0.2,
+          "topic_counts": {
+            "limpieza": 4,
+            "precio": 3,
+            "habitacion": 2,
+            "servicio": 4,
+            "ubicacion": 2,
+            "otros": 5
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 5,
+          "negative_rate": 0.25,
+          "topic_counts": {
+            "servicio": 5,
+            "otros": 7,
+            "precio": 5,
+            "habitacion": 1,
+            "limpieza": 1,
+            "ubicacion": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.2,
+          "alert_threshold": 0.4,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 4,
+          "negative_rate": 0.2,
+          "topic_counts": {
+            "otros": 4,
+            "servicio": 2,
+            "limpieza": 4,
+            "habitacion": 3,
+            "precio": 6,
+            "ubicacion": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.225,
+          "alert_threshold": 0.425,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 20,
+          "negative_count": 6,
+          "negative_rate": 0.3,
+          "topic_counts": {
+            "limpieza": 5,
+            "precio": 5,
+            "ubicacion": 4,
+            "otros": 3,
+            "habitacion": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.2167,
+          "alert_threshold": 0.4167,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A2",
+      "name": "sin cambio alto",
+      "rep": 4,
+      "seed": 5103,
+      "expected_alert": false,
+      "target_alert": false,
+      "correct_target_outcome": true,
+      "alerts_total": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 5,
+          "negative_rate": 0.25,
+          "topic_counts": {
+            "servicio": 3,
+            "ubicacion": 2,
+            "otros": 5,
+            "precio": 5,
+            "limpieza": 3,
+            "habitacion": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 6,
+          "negative_rate": 0.3,
+          "topic_counts": {
+            "precio": 4,
+            "habitacion": 3,
+            "otros": 5,
+            "servicio": 4,
+            "limpieza": 2,
+            "ubicacion": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.25,
+          "alert_threshold": 0.45,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 8,
+          "negative_rate": 0.4,
+          "topic_counts": {
+            "precio": 5,
+            "ubicacion": 6,
+            "habitacion": 3,
+            "limpieza": 3,
+            "servicio": 2,
+            "otros": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.275,
+          "alert_threshold": 0.475,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 20,
+          "negative_count": 5,
+          "negative_rate": 0.25,
+          "topic_counts": {
+            "precio": 8,
+            "limpieza": 1,
+            "ubicacion": 3,
+            "servicio": 5,
+            "habitacion": 2,
+            "otros": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.3167,
+          "alert_threshold": 0.5167,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A2",
+      "name": "sin cambio alto",
+      "rep": 5,
+      "seed": 5104,
+      "expected_alert": false,
+      "target_alert": false,
+      "correct_target_outcome": true,
+      "alerts_total": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 7,
+          "negative_rate": 0.35,
+          "topic_counts": {
+            "habitacion": 4,
+            "otros": 5,
+            "limpieza": 5,
+            "precio": 3,
+            "servicio": 1,
+            "ubicacion": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 7,
+          "negative_rate": 0.35,
+          "topic_counts": {
+            "ubicacion": 5,
+            "otros": 3,
+            "servicio": 3,
+            "limpieza": 5,
+            "habitacion": 3,
+            "precio": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.35,
+          "alert_threshold": 0.55,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 4,
+          "negative_rate": 0.2,
+          "topic_counts": {
+            "habitacion": 2,
+            "servicio": 7,
+            "ubicacion": 3,
+            "otros": 4,
+            "precio": 2,
+            "limpieza": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.35,
+          "alert_threshold": 0.55,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 20,
+          "negative_count": 6,
+          "negative_rate": 0.3,
+          "topic_counts": {
+            "habitacion": 2,
+            "limpieza": 4,
+            "servicio": 5,
+            "ubicacion": 5,
+            "otros": 2,
+            "precio": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.3,
+          "alert_threshold": 0.5,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A3",
+      "name": "aumento menor al umbral",
+      "rep": 1,
+      "seed": 5200,
+      "expected_alert": false,
+      "target_alert": false,
+      "correct_target_outcome": true,
+      "alerts_total": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 3,
+          "negative_rate": 0.15,
+          "topic_counts": {
+            "otros": 5,
+            "habitacion": 5,
+            "precio": 4,
+            "servicio": 3,
+            "limpieza": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 6,
+          "negative_rate": 0.3,
+          "topic_counts": {
+            "precio": 3,
+            "ubicacion": 5,
+            "habitacion": 4,
+            "limpieza": 3,
+            "otros": 4,
+            "servicio": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.15,
+          "alert_threshold": 0.35,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 4,
+          "negative_rate": 0.2,
+          "topic_counts": {
+            "otros": 4,
+            "habitacion": 2,
+            "precio": 6,
+            "ubicacion": 1,
+            "limpieza": 6,
+            "servicio": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.225,
+          "alert_threshold": 0.425,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 20,
+          "negative_count": 6,
+          "negative_rate": 0.3,
+          "topic_counts": {
+            "otros": 3,
+            "servicio": 2,
+            "habitacion": 7,
+            "precio": 6,
+            "ubicacion": 1,
+            "limpieza": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.2167,
+          "alert_threshold": 0.4167,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A3",
+      "name": "aumento menor al umbral",
+      "rep": 2,
+      "seed": 5201,
+      "expected_alert": false,
+      "target_alert": false,
+      "correct_target_outcome": true,
+      "alerts_total": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 3,
+          "negative_rate": 0.15,
+          "topic_counts": {
+            "limpieza": 5,
+            "precio": 4,
+            "servicio": 4,
+            "otros": 1,
+            "habitacion": 5,
+            "ubicacion": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 1,
+          "negative_rate": 0.05,
+          "topic_counts": {
+            "limpieza": 1,
+            "precio": 7,
+            "otros": 6,
+            "ubicacion": 3,
+            "servicio": 1,
+            "habitacion": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.15,
+          "alert_threshold": 0.35,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 2,
+          "negative_rate": 0.1,
+          "topic_counts": {
+            "servicio": 5,
+            "precio": 7,
+            "otros": 2,
+            "ubicacion": 1,
+            "habitacion": 2,
+            "limpieza": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.1,
+          "alert_threshold": 0.3,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 20,
+          "negative_count": 5,
+          "negative_rate": 0.25,
+          "topic_counts": {
+            "limpieza": 3,
+            "servicio": 4,
+            "ubicacion": 6,
+            "habitacion": 1,
+            "otros": 4,
+            "precio": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.1,
+          "alert_threshold": 0.3,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A3",
+      "name": "aumento menor al umbral",
+      "rep": 3,
+      "seed": 5202,
+      "expected_alert": false,
+      "target_alert": false,
+      "correct_target_outcome": true,
+      "alerts_total": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 3,
+          "negative_rate": 0.15,
+          "topic_counts": {
+            "precio": 9,
+            "otros": 4,
+            "limpieza": 4,
+            "habitacion": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 7,
+          "negative_rate": 0.35,
+          "topic_counts": {
+            "precio": 6,
+            "habitacion": 1,
+            "otros": 3,
+            "ubicacion": 5,
+            "limpieza": 4,
+            "servicio": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.15,
+          "alert_threshold": 0.35,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 3,
+          "negative_rate": 0.15,
+          "topic_counts": {
+            "ubicacion": 4,
+            "habitacion": 2,
+            "limpieza": 5,
+            "precio": 3,
+            "servicio": 1,
+            "otros": 5
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.25,
+          "alert_threshold": 0.45,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 20,
+          "negative_count": 5,
+          "negative_rate": 0.25,
+          "topic_counts": {
+            "precio": 4,
+            "otros": 5,
+            "habitacion": 6,
+            "ubicacion": 2,
+            "limpieza": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.2167,
+          "alert_threshold": 0.4167,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A3",
+      "name": "aumento menor al umbral",
+      "rep": 4,
+      "seed": 5203,
+      "expected_alert": false,
+      "target_alert": false,
+      "correct_target_outcome": true,
+      "alerts_total": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 4,
+          "negative_rate": 0.2,
+          "topic_counts": {
+            "habitacion": 1,
+            "servicio": 4,
+            "ubicacion": 5,
+            "otros": 4,
+            "limpieza": 4,
+            "precio": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 3,
+          "negative_rate": 0.15,
+          "topic_counts": {
+            "otros": 3,
+            "habitacion": 5,
+            "precio": 7,
+            "ubicacion": 2,
+            "servicio": 2,
+            "limpieza": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.2,
+          "alert_threshold": 0.4,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 5,
+          "negative_rate": 0.25,
+          "topic_counts": {
+            "ubicacion": 4,
+            "limpieza": 3,
+            "precio": 3,
+            "habitacion": 4,
+            "otros": 6
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.175,
+          "alert_threshold": 0.375,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 20,
+          "negative_count": 7,
+          "negative_rate": 0.35,
+          "topic_counts": {
+            "otros": 2,
+            "servicio": 3,
+            "limpieza": 5,
+            "precio": 4,
+            "ubicacion": 3,
+            "habitacion": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.2,
+          "alert_threshold": 0.4,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A3",
+      "name": "aumento menor al umbral",
+      "rep": 5,
+      "seed": 5204,
+      "expected_alert": false,
+      "target_alert": false,
+      "correct_target_outcome": true,
+      "alerts_total": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 6,
+          "negative_rate": 0.3,
+          "topic_counts": {
+            "servicio": 3,
+            "limpieza": 4,
+            "precio": 7,
+            "otros": 3,
+            "ubicacion": 2,
+            "habitacion": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 4,
+          "negative_rate": 0.2,
+          "topic_counts": {
+            "otros": 3,
+            "habitacion": 3,
+            "ubicacion": 3,
+            "servicio": 5,
+            "limpieza": 3,
+            "precio": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.3,
+          "alert_threshold": 0.5,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 1,
+          "negative_rate": 0.05,
+          "topic_counts": {
+            "habitacion": 4,
+            "servicio": 3,
+            "otros": 5,
+            "precio": 6,
+            "ubicacion": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.25,
+          "alert_threshold": 0.45,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 20,
+          "negative_count": 6,
+          "negative_rate": 0.3,
+          "topic_counts": {
+            "precio": 3,
+            "ubicacion": 7,
+            "otros": 3,
+            "servicio": 1,
+            "habitacion": 4,
+            "limpieza": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.1833,
+          "alert_threshold": 0.3833,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A4",
+      "name": "aumento positivo",
+      "rep": 1,
+      "seed": 5300,
+      "expected_alert": true,
+      "target_alert": true,
+      "correct_target_outcome": true,
+      "alerts_total": 1,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 1.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 3,
+          "negative_rate": 0.15,
+          "topic_counts": {
+            "otros": 4,
+            "ubicacion": 1,
+            "habitacion": 5,
+            "servicio": 2,
+            "precio": 6,
+            "limpieza": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 2,
+          "negative_rate": 0.1,
+          "topic_counts": {
+            "precio": 5,
+            "habitacion": 4,
+            "otros": 4,
+            "servicio": 3,
+            "limpieza": 3,
+            "ubicacion": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.15,
+          "alert_threshold": 0.35,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 2,
+          "negative_rate": 0.1,
+          "topic_counts": {
+            "habitacion": 6,
+            "servicio": 2,
+            "precio": 7,
+            "otros": 1,
+            "ubicacion": 3,
+            "limpieza": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.125,
+          "alert_threshold": 0.325,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 20,
+          "negative_count": 7,
+          "negative_rate": 0.35,
+          "topic_counts": {
+            "limpieza": 5,
+            "ubicacion": 4,
+            "precio": 6,
+            "otros": 2,
+            "servicio": 3
+          },
+          "alert": true,
+          "alert_reason": "negatividad 35% supera el umbral 32% (línea base 12%)",
+          "line_base": 0.1167,
+          "alert_threshold": 0.3167,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A4",
+      "name": "aumento positivo",
+      "rep": 2,
+      "seed": 5301,
+      "expected_alert": true,
+      "target_alert": false,
+      "correct_target_outcome": false,
+      "alerts_total": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 5,
+          "negative_rate": 0.25,
+          "topic_counts": {
+            "habitacion": 5,
+            "limpieza": 3,
+            "servicio": 3,
+            "precio": 6,
+            "otros": 2,
+            "ubicacion": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 1,
+          "negative_rate": 0.05,
+          "topic_counts": {
+            "otros": 2,
+            "precio": 3,
+            "habitacion": 3,
+            "limpieza": 4,
+            "servicio": 6,
+            "ubicacion": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.25,
+          "alert_threshold": 0.45,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 3,
+          "negative_rate": 0.15,
+          "topic_counts": {
+            "habitacion": 3,
+            "limpieza": 3,
+            "precio": 5,
+            "ubicacion": 3,
+            "servicio": 3,
+            "otros": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.15,
+          "alert_threshold": 0.35,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 20,
+          "negative_count": 7,
+          "negative_rate": 0.35,
+          "topic_counts": {
+            "otros": 5,
+            "precio": 3,
+            "servicio": 4,
+            "limpieza": 3,
+            "habitacion": 2,
+            "ubicacion": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.15,
+          "alert_threshold": 0.35,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A4",
+      "name": "aumento positivo",
+      "rep": 3,
+      "seed": 5302,
+      "expected_alert": true,
+      "target_alert": false,
+      "correct_target_outcome": false,
+      "alerts_total": 1,
+      "tp": 0,
+      "fp": 1,
+      "fn": 1,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 2,
+          "negative_rate": 0.1,
+          "topic_counts": {
+            "habitacion": 4,
+            "otros": 6,
+            "limpieza": 1,
+            "precio": 5,
+            "servicio": 4
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 7,
+          "negative_rate": 0.35,
+          "topic_counts": {
+            "habitacion": 4,
+            "servicio": 1,
+            "otros": 3,
+            "precio": 1,
+            "ubicacion": 8,
+            "limpieza": 3
+          },
+          "alert": true,
+          "alert_reason": "negatividad 35% supera el umbral 30% (línea base 10%)",
+          "line_base": 0.1,
+          "alert_threshold": 0.3,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 4,
+          "negative_rate": 0.2,
+          "topic_counts": {
+            "otros": 5,
+            "precio": 6,
+            "habitacion": 4,
+            "limpieza": 2,
+            "ubicacion": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.225,
+          "alert_threshold": 0.425,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 20,
+          "negative_count": 8,
+          "negative_rate": 0.4,
+          "topic_counts": {
+            "servicio": 3,
+            "ubicacion": 4,
+            "habitacion": 2,
+            "otros": 2,
+            "precio": 5,
+            "limpieza": 4
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.2167,
+          "alert_threshold": 0.4167,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A4",
+      "name": "aumento positivo",
+      "rep": 4,
+      "seed": 5303,
+      "expected_alert": true,
+      "target_alert": false,
+      "correct_target_outcome": false,
+      "alerts_total": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 4,
+          "negative_rate": 0.2,
+          "topic_counts": {
+            "habitacion": 4,
+            "limpieza": 5,
+            "ubicacion": 1,
+            "servicio": 3,
+            "precio": 5,
+            "otros": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 2,
+          "negative_rate": 0.1,
+          "topic_counts": {
+            "precio": 5,
+            "otros": 4,
+            "limpieza": 2,
+            "habitacion": 8,
+            "ubicacion": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.2,
+          "alert_threshold": 0.4,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 3,
+          "negative_rate": 0.15,
+          "topic_counts": {
+            "habitacion": 4,
+            "precio": 5,
+            "limpieza": 3,
+            "ubicacion": 6,
+            "servicio": 1,
+            "otros": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.15,
+          "alert_threshold": 0.35,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 20,
+          "negative_count": 7,
+          "negative_rate": 0.35,
+          "topic_counts": {
+            "servicio": 3,
+            "precio": 2,
+            "ubicacion": 5,
+            "otros": 4,
+            "habitacion": 4,
+            "limpieza": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.15,
+          "alert_threshold": 0.35,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A4",
+      "name": "aumento positivo",
+      "rep": 5,
+      "seed": 5304,
+      "expected_alert": true,
+      "target_alert": false,
+      "correct_target_outcome": false,
+      "alerts_total": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 2,
+          "negative_rate": 0.1,
+          "topic_counts": {
+            "servicio": 2,
+            "otros": 2,
+            "ubicacion": 3,
+            "precio": 4,
+            "habitacion": 6,
+            "limpieza": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 3,
+          "negative_rate": 0.15,
+          "topic_counts": {
+            "precio": 4,
+            "habitacion": 3,
+            "ubicacion": 3,
+            "otros": 4,
+            "limpieza": 4,
+            "servicio": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.1,
+          "alert_threshold": 0.3,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 3,
+          "negative_rate": 0.15,
+          "topic_counts": {
+            "servicio": 2,
+            "precio": 5,
+            "limpieza": 2,
+            "otros": 6,
+            "habitacion": 2,
+            "ubicacion": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.125,
+          "alert_threshold": 0.325,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 20,
+          "negative_count": 5,
+          "negative_rate": 0.25,
+          "topic_counts": {
+            "otros": 5,
+            "servicio": 4,
+            "precio": 3,
+            "limpieza": 3,
+            "ubicacion": 1,
+            "habitacion": 4
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.1333,
+          "alert_threshold": 0.3333,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A5",
+      "name": "aumento marcado",
+      "rep": 1,
+      "seed": 5400,
+      "expected_alert": true,
+      "target_alert": true,
+      "correct_target_outcome": true,
+      "alerts_total": 1,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 1.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 6,
+          "negative_rate": 0.3,
+          "topic_counts": {
+            "ubicacion": 5,
+            "limpieza": 3,
+            "habitacion": 5,
+            "servicio": 1,
+            "precio": 4,
+            "otros": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 5,
+          "negative_rate": 0.25,
+          "topic_counts": {
+            "habitacion": 4,
+            "ubicacion": 4,
+            "limpieza": 4,
+            "otros": 3,
+            "servicio": 3,
+            "precio": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.3,
+          "alert_threshold": 0.5,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 6,
+          "negative_rate": 0.3,
+          "topic_counts": {
+            "limpieza": 2,
+            "otros": 4,
+            "precio": 4,
+            "ubicacion": 7,
+            "servicio": 2,
+            "habitacion": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.275,
+          "alert_threshold": 0.475,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 20,
+          "negative_count": 10,
+          "negative_rate": 0.5,
+          "topic_counts": {
+            "limpieza": 5,
+            "habitacion": 2,
+            "precio": 5,
+            "servicio": 5,
+            "ubicacion": 3
+          },
+          "alert": true,
+          "alert_reason": "negatividad 50% supera el umbral 48% (línea base 28%)",
+          "line_base": 0.2833,
+          "alert_threshold": 0.4833,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A5",
+      "name": "aumento marcado",
+      "rep": 2,
+      "seed": 5401,
+      "expected_alert": true,
+      "target_alert": true,
+      "correct_target_outcome": true,
+      "alerts_total": 1,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 1.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 3,
+          "negative_rate": 0.15,
+          "topic_counts": {
+            "ubicacion": 2,
+            "otros": 6,
+            "limpieza": 2,
+            "precio": 6,
+            "habitacion": 4
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 4,
+          "negative_rate": 0.2,
+          "topic_counts": {
+            "ubicacion": 5,
+            "precio": 6,
+            "servicio": 2,
+            "limpieza": 4,
+            "otros": 2,
+            "habitacion": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.15,
+          "alert_threshold": 0.35,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 5,
+          "negative_rate": 0.25,
+          "topic_counts": {
+            "servicio": 3,
+            "habitacion": 5,
+            "otros": 3,
+            "ubicacion": 2,
+            "limpieza": 2,
+            "precio": 5
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.175,
+          "alert_threshold": 0.375,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 20,
+          "negative_count": 9,
+          "negative_rate": 0.45,
+          "topic_counts": {
+            "ubicacion": 4,
+            "precio": 5,
+            "otros": 2,
+            "limpieza": 3,
+            "servicio": 4,
+            "habitacion": 2
+          },
+          "alert": true,
+          "alert_reason": "negatividad 45% supera el umbral 40% (línea base 20%)",
+          "line_base": 0.2,
+          "alert_threshold": 0.4,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A5",
+      "name": "aumento marcado",
+      "rep": 3,
+      "seed": 5402,
+      "expected_alert": true,
+      "target_alert": false,
+      "correct_target_outcome": false,
+      "alerts_total": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 4,
+          "negative_rate": 0.2,
+          "topic_counts": {
+            "limpieza": 3,
+            "servicio": 3,
+            "precio": 4,
+            "ubicacion": 3,
+            "habitacion": 3,
+            "otros": 4
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 5,
+          "negative_rate": 0.25,
+          "topic_counts": {
+            "servicio": 3,
+            "habitacion": 3,
+            "limpieza": 5,
+            "precio": 5,
+            "otros": 1,
+            "ubicacion": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.2,
+          "alert_threshold": 0.4,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 7,
+          "negative_rate": 0.35,
+          "topic_counts": {
+            "servicio": 5,
+            "habitacion": 5,
+            "precio": 4,
+            "otros": 1,
+            "limpieza": 2,
+            "ubicacion": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.225,
+          "alert_threshold": 0.425,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 20,
+          "negative_count": 9,
+          "negative_rate": 0.45,
+          "topic_counts": {
+            "habitacion": 3,
+            "ubicacion": 4,
+            "otros": 3,
+            "servicio": 5,
+            "precio": 3,
+            "limpieza": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.2667,
+          "alert_threshold": 0.4667,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A5",
+      "name": "aumento marcado",
+      "rep": 4,
+      "seed": 5403,
+      "expected_alert": true,
+      "target_alert": true,
+      "correct_target_outcome": true,
+      "alerts_total": 1,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 1.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 4,
+          "negative_rate": 0.2,
+          "topic_counts": {
+            "limpieza": 2,
+            "otros": 6,
+            "precio": 4,
+            "ubicacion": 3,
+            "habitacion": 2,
+            "servicio": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 4,
+          "negative_rate": 0.2,
+          "topic_counts": {
+            "ubicacion": 2,
+            "otros": 6,
+            "servicio": 2,
+            "habitacion": 4,
+            "precio": 2,
+            "limpieza": 4
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.2,
+          "alert_threshold": 0.4,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 4,
+          "negative_rate": 0.2,
+          "topic_counts": {
+            "servicio": 5,
+            "habitacion": 4,
+            "otros": 3,
+            "limpieza": 2,
+            "ubicacion": 3,
+            "precio": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.2,
+          "alert_threshold": 0.4,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 20,
+          "negative_count": 11,
+          "negative_rate": 0.55,
+          "topic_counts": {
+            "servicio": 3,
+            "habitacion": 3,
+            "precio": 1,
+            "ubicacion": 3,
+            "limpieza": 8,
+            "otros": 2
+          },
+          "alert": true,
+          "alert_reason": "negatividad 55% supera el umbral 40% (línea base 20%)",
+          "line_base": 0.2,
+          "alert_threshold": 0.4,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A5",
+      "name": "aumento marcado",
+      "rep": 5,
+      "seed": 5404,
+      "expected_alert": true,
+      "target_alert": true,
+      "correct_target_outcome": true,
+      "alerts_total": 1,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 1.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 4,
+          "negative_rate": 0.2,
+          "topic_counts": {
+            "habitacion": 4,
+            "otros": 4,
+            "precio": 4,
+            "ubicacion": 4,
+            "limpieza": 1,
+            "servicio": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 3,
+          "negative_rate": 0.15,
+          "topic_counts": {
+            "otros": 3,
+            "limpieza": 3,
+            "habitacion": 4,
+            "servicio": 3,
+            "precio": 5,
+            "ubicacion": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.2,
+          "alert_threshold": 0.4,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 4,
+          "negative_rate": 0.2,
+          "topic_counts": {
+            "precio": 8,
+            "habitacion": 5,
+            "limpieza": 4,
+            "ubicacion": 1,
+            "servicio": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.175,
+          "alert_threshold": 0.375,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 20,
+          "negative_count": 10,
+          "negative_rate": 0.5,
+          "topic_counts": {
+            "habitacion": 2,
+            "precio": 4,
+            "otros": 2,
+            "limpieza": 6,
+            "ubicacion": 4,
+            "servicio": 2
+          },
+          "alert": true,
+          "alert_reason": "negatividad 50% supera el umbral 38% (línea base 18%)",
+          "line_base": 0.1833,
+          "alert_threshold": 0.3833,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A6",
+      "name": "justo en el umbral estricto",
+      "rep": 1,
+      "seed": 5500,
+      "expected_alert": false,
+      "target_alert": false,
+      "correct_target_outcome": true,
+      "alerts_total": 1,
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 5,
+          "negative_rate": 0.25,
+          "topic_counts": {
+            "precio": 2,
+            "ubicacion": 7,
+            "limpieza": 4,
+            "otros": 3,
+            "habitacion": 3,
+            "servicio": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 3,
+          "negative_rate": 0.15,
+          "topic_counts": {
+            "precio": 4,
+            "otros": 2,
+            "servicio": 4,
+            "ubicacion": 5,
+            "limpieza": 4,
+            "habitacion": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.25,
+          "alert_threshold": 0.45,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 9,
+          "negative_rate": 0.45,
+          "topic_counts": {
+            "limpieza": 6,
+            "servicio": 2,
+            "habitacion": 3,
+            "otros": 5,
+            "ubicacion": 3,
+            "precio": 1
+          },
+          "alert": true,
+          "alert_reason": "negatividad 45% supera el umbral 40% (línea base 20%)",
+          "line_base": 0.2,
+          "alert_threshold": 0.4,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 20,
+          "negative_count": 6,
+          "negative_rate": 0.3,
+          "topic_counts": {
+            "limpieza": 5,
+            "precio": 5,
+            "ubicacion": 1,
+            "servicio": 3,
+            "habitacion": 3,
+            "otros": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.2833,
+          "alert_threshold": 0.4833,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A6",
+      "name": "justo en el umbral estricto",
+      "rep": 2,
+      "seed": 5501,
+      "expected_alert": false,
+      "target_alert": false,
+      "correct_target_outcome": true,
+      "alerts_total": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 5,
+          "negative_rate": 0.25,
+          "topic_counts": {
+            "ubicacion": 5,
+            "servicio": 4,
+            "precio": 5,
+            "otros": 2,
+            "limpieza": 2,
+            "habitacion": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 7,
+          "negative_rate": 0.35,
+          "topic_counts": {
+            "limpieza": 7,
+            "ubicacion": 4,
+            "habitacion": 2,
+            "precio": 2,
+            "otros": 4,
+            "servicio": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.25,
+          "alert_threshold": 0.45,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 2,
+          "negative_rate": 0.1,
+          "topic_counts": {
+            "precio": 9,
+            "habitacion": 3,
+            "ubicacion": 2,
+            "servicio": 4,
+            "limpieza": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.3,
+          "alert_threshold": 0.5,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 20,
+          "negative_count": 8,
+          "negative_rate": 0.4,
+          "topic_counts": {
+            "habitacion": 6,
+            "servicio": 2,
+            "limpieza": 3,
+            "ubicacion": 5,
+            "precio": 3,
+            "otros": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.2333,
+          "alert_threshold": 0.4333,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A6",
+      "name": "justo en el umbral estricto",
+      "rep": 3,
+      "seed": 5502,
+      "expected_alert": false,
+      "target_alert": true,
+      "correct_target_outcome": false,
+      "alerts_total": 1,
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 3,
+          "negative_rate": 0.15,
+          "topic_counts": {
+            "precio": 7,
+            "otros": 5,
+            "ubicacion": 1,
+            "limpieza": 2,
+            "servicio": 3,
+            "habitacion": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 4,
+          "negative_rate": 0.2,
+          "topic_counts": {
+            "limpieza": 3,
+            "habitacion": 4,
+            "precio": 8,
+            "otros": 2,
+            "ubicacion": 2,
+            "servicio": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.15,
+          "alert_threshold": 0.35,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 6,
+          "negative_rate": 0.3,
+          "topic_counts": {
+            "otros": 3,
+            "servicio": 4,
+            "precio": 2,
+            "limpieza": 5,
+            "habitacion": 5,
+            "ubicacion": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.175,
+          "alert_threshold": 0.375,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 20,
+          "negative_count": 10,
+          "negative_rate": 0.5,
+          "topic_counts": {
+            "habitacion": 5,
+            "precio": 3,
+            "servicio": 4,
+            "otros": 2,
+            "ubicacion": 3,
+            "limpieza": 3
+          },
+          "alert": true,
+          "alert_reason": "negatividad 50% supera el umbral 42% (línea base 22%)",
+          "line_base": 0.2167,
+          "alert_threshold": 0.4167,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A6",
+      "name": "justo en el umbral estricto",
+      "rep": 4,
+      "seed": 5503,
+      "expected_alert": false,
+      "target_alert": false,
+      "correct_target_outcome": true,
+      "alerts_total": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 6,
+          "negative_rate": 0.3,
+          "topic_counts": {
+            "precio": 4,
+            "ubicacion": 4,
+            "habitacion": 5,
+            "otros": 4,
+            "limpieza": 2,
+            "servicio": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 6,
+          "negative_rate": 0.3,
+          "topic_counts": {
+            "limpieza": 3,
+            "habitacion": 4,
+            "precio": 4,
+            "ubicacion": 4,
+            "otros": 4,
+            "servicio": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.3,
+          "alert_threshold": 0.5,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 4,
+          "negative_rate": 0.2,
+          "topic_counts": {
+            "otros": 4,
+            "servicio": 2,
+            "ubicacion": 5,
+            "habitacion": 4,
+            "precio": 1,
+            "limpieza": 4
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.3,
+          "alert_threshold": 0.5,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 20,
+          "negative_count": 6,
+          "negative_rate": 0.3,
+          "topic_counts": {
+            "ubicacion": 1,
+            "precio": 6,
+            "otros": 5,
+            "limpieza": 4,
+            "habitacion": 3,
+            "servicio": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.2667,
+          "alert_threshold": 0.4667,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A6",
+      "name": "justo en el umbral estricto",
+      "rep": 5,
+      "seed": 5504,
+      "expected_alert": false,
+      "target_alert": true,
+      "correct_target_outcome": false,
+      "alerts_total": 1,
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 5,
+          "negative_rate": 0.25,
+          "topic_counts": {
+            "limpieza": 2,
+            "habitacion": 4,
+            "otros": 8,
+            "precio": 4,
+            "servicio": 1,
+            "ubicacion": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 4,
+          "negative_rate": 0.2,
+          "topic_counts": {
+            "otros": 5,
+            "precio": 4,
+            "limpieza": 4,
+            "habitacion": 3,
+            "servicio": 2,
+            "ubicacion": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.25,
+          "alert_threshold": 0.45,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 2,
+          "negative_rate": 0.1,
+          "topic_counts": {
+            "otros": 2,
+            "servicio": 2,
+            "precio": 8,
+            "limpieza": 4,
+            "habitacion": 2,
+            "ubicacion": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.225,
+          "alert_threshold": 0.425,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 20,
+          "negative_count": 8,
+          "negative_rate": 0.4,
+          "topic_counts": {
+            "precio": 6,
+            "servicio": 4,
+            "habitacion": 2,
+            "limpieza": 3,
+            "ubicacion": 4,
+            "otros": 1
+          },
+          "alert": true,
+          "alert_reason": "negatividad 40% supera el umbral 38% (línea base 18%)",
+          "line_base": 0.1833,
+          "alert_threshold": 0.3833,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A7",
+      "name": "línea base variable",
+      "rep": 1,
+      "seed": 5600,
+      "expected_alert": true,
+      "target_alert": false,
+      "correct_target_outcome": false,
+      "alerts_total": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 1,
+          "negative_rate": 0.05,
+          "topic_counts": {
+            "otros": 5,
+            "habitacion": 4,
+            "limpieza": 2,
+            "precio": 6,
+            "ubicacion": 1,
+            "servicio": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 4,
+          "negative_rate": 0.2,
+          "topic_counts": {
+            "limpieza": 4,
+            "ubicacion": 3,
+            "precio": 2,
+            "habitacion": 5,
+            "servicio": 3,
+            "otros": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.05,
+          "alert_threshold": 0.25,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 1,
+          "negative_rate": 0.05,
+          "topic_counts": {
+            "precio": 7,
+            "habitacion": 4,
+            "ubicacion": 2,
+            "servicio": 3,
+            "otros": 4
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.125,
+          "alert_threshold": 0.325,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 20,
+          "negative_count": 5,
+          "negative_rate": 0.25,
+          "topic_counts": {
+            "precio": 6,
+            "servicio": 2,
+            "habitacion": 3,
+            "ubicacion": 3,
+            "otros": 4,
+            "limpieza": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.1,
+          "alert_threshold": 0.3,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A7",
+      "name": "línea base variable",
+      "rep": 2,
+      "seed": 5601,
+      "expected_alert": true,
+      "target_alert": false,
+      "correct_target_outcome": false,
+      "alerts_total": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 6,
+          "negative_rate": 0.3,
+          "topic_counts": {
+            "otros": 3,
+            "servicio": 2,
+            "ubicacion": 6,
+            "precio": 4,
+            "limpieza": 3,
+            "habitacion": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 6,
+          "negative_rate": 0.3,
+          "topic_counts": {
+            "precio": 3,
+            "otros": 4,
+            "servicio": 3,
+            "limpieza": 2,
+            "habitacion": 3,
+            "ubicacion": 5
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.3,
+          "alert_threshold": 0.5,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 3,
+          "negative_rate": 0.15,
+          "topic_counts": {
+            "ubicacion": 3,
+            "limpieza": 2,
+            "otros": 5,
+            "servicio": 3,
+            "precio": 5,
+            "habitacion": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.3,
+          "alert_threshold": 0.5,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 20,
+          "negative_count": 8,
+          "negative_rate": 0.4,
+          "topic_counts": {
+            "limpieza": 3,
+            "servicio": 1,
+            "otros": 6,
+            "precio": 4,
+            "habitacion": 3,
+            "ubicacion": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.25,
+          "alert_threshold": 0.45,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A7",
+      "name": "línea base variable",
+      "rep": 3,
+      "seed": 5602,
+      "expected_alert": true,
+      "target_alert": false,
+      "correct_target_outcome": false,
+      "alerts_total": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 5,
+          "negative_rate": 0.25,
+          "topic_counts": {
+            "otros": 2,
+            "limpieza": 6,
+            "habitacion": 3,
+            "precio": 5,
+            "ubicacion": 3,
+            "servicio": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 7,
+          "negative_rate": 0.35,
+          "topic_counts": {
+            "servicio": 7,
+            "limpieza": 3,
+            "precio": 4,
+            "otros": 3,
+            "habitacion": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.25,
+          "alert_threshold": 0.45,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 3,
+          "negative_rate": 0.15,
+          "topic_counts": {
+            "precio": 3,
+            "ubicacion": 2,
+            "habitacion": 5,
+            "limpieza": 4,
+            "otros": 4,
+            "servicio": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.3,
+          "alert_threshold": 0.5,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 20,
+          "negative_count": 9,
+          "negative_rate": 0.45,
+          "topic_counts": {
+            "ubicacion": 6,
+            "servicio": 4,
+            "otros": 2,
+            "limpieza": 3,
+            "habitacion": 4,
+            "precio": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.25,
+          "alert_threshold": 0.45,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A7",
+      "name": "línea base variable",
+      "rep": 4,
+      "seed": 5603,
+      "expected_alert": true,
+      "target_alert": false,
+      "correct_target_outcome": false,
+      "alerts_total": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 5,
+          "negative_rate": 0.25,
+          "topic_counts": {
+            "otros": 6,
+            "servicio": 5,
+            "limpieza": 5,
+            "habitacion": 1,
+            "precio": 2,
+            "ubicacion": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 4,
+          "negative_rate": 0.2,
+          "topic_counts": {
+            "ubicacion": 2,
+            "otros": 2,
+            "precio": 6,
+            "servicio": 3,
+            "habitacion": 4,
+            "limpieza": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.25,
+          "alert_threshold": 0.45,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 6,
+          "negative_rate": 0.3,
+          "topic_counts": {
+            "limpieza": 3,
+            "ubicacion": 7,
+            "precio": 2,
+            "habitacion": 4,
+            "otros": 4
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.225,
+          "alert_threshold": 0.425,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 20,
+          "negative_count": 8,
+          "negative_rate": 0.4,
+          "topic_counts": {
+            "limpieza": 3,
+            "ubicacion": 6,
+            "otros": 4,
+            "habitacion": 3,
+            "precio": 4
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.25,
+          "alert_threshold": 0.45,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A7",
+      "name": "línea base variable",
+      "rep": 5,
+      "seed": 5604,
+      "expected_alert": true,
+      "target_alert": true,
+      "correct_target_outcome": true,
+      "alerts_total": 1,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 1.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 5,
+          "negative_rate": 0.25,
+          "topic_counts": {
+            "ubicacion": 6,
+            "servicio": 3,
+            "habitacion": 4,
+            "precio": 3,
+            "limpieza": 4
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 8,
+          "negative_rate": 0.4,
+          "topic_counts": {
+            "ubicacion": 8,
+            "precio": 3,
+            "otros": 4,
+            "habitacion": 4,
+            "limpieza": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.25,
+          "alert_threshold": 0.45,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 4,
+          "negative_rate": 0.2,
+          "topic_counts": {
+            "precio": 4,
+            "limpieza": 3,
+            "ubicacion": 6,
+            "otros": 4,
+            "servicio": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.325,
+          "alert_threshold": 0.525,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 20,
+          "negative_count": 11,
+          "negative_rate": 0.55,
+          "topic_counts": {
+            "precio": 4,
+            "otros": 2,
+            "limpieza": 7,
+            "ubicacion": 4,
+            "habitacion": 2,
+            "servicio": 1
+          },
+          "alert": true,
+          "alert_reason": "negatividad 55% supera el umbral 48% (línea base 28%)",
+          "line_base": 0.2833,
+          "alert_threshold": 0.4833,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A8",
+      "name": "volumen insuficiente",
+      "rep": 1,
+      "seed": 5700,
+      "expected_alert": false,
+      "target_alert": false,
+      "correct_target_outcome": true,
+      "alerts_total": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 2,
+          "negative_rate": 0.1,
+          "topic_counts": {
+            "precio": 4,
+            "servicio": 3,
+            "limpieza": 4,
+            "habitacion": 6,
+            "ubicacion": 2,
+            "otros": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 4,
+          "negative_rate": 0.2,
+          "topic_counts": {
+            "ubicacion": 6,
+            "precio": 4,
+            "servicio": 2,
+            "otros": 2,
+            "limpieza": 3,
+            "habitacion": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.1,
+          "alert_threshold": 0.3,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 5,
+          "negative_rate": 0.25,
+          "topic_counts": {
+            "habitacion": 3,
+            "precio": 5,
+            "servicio": 1,
+            "otros": 4,
+            "limpieza": 7
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.15,
+          "alert_threshold": 0.35,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 2,
+          "negative_count": 1,
+          "negative_rate": 0.5,
+          "topic_counts": {
+            "ubicacion": 1,
+            "precio": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.1833,
+          "alert_threshold": 0.3833,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A8",
+      "name": "volumen insuficiente",
+      "rep": 2,
+      "seed": 5701,
+      "expected_alert": false,
+      "target_alert": false,
+      "correct_target_outcome": true,
+      "alerts_total": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 4,
+          "negative_rate": 0.2,
+          "topic_counts": {
+            "precio": 6,
+            "otros": 5,
+            "limpieza": 3,
+            "habitacion": 3,
+            "servicio": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 3,
+          "negative_rate": 0.15,
+          "topic_counts": {
+            "habitacion": 1,
+            "servicio": 5,
+            "ubicacion": 3,
+            "otros": 4,
+            "precio": 6,
+            "limpieza": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.2,
+          "alert_threshold": 0.4,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 5,
+          "negative_rate": 0.25,
+          "topic_counts": {
+            "limpieza": 5,
+            "ubicacion": 2,
+            "habitacion": 4,
+            "otros": 5,
+            "servicio": 4
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.175,
+          "alert_threshold": 0.375,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 2,
+          "negative_count": 1,
+          "negative_rate": 0.5,
+          "topic_counts": {
+            "servicio": 1,
+            "otros": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.2,
+          "alert_threshold": 0.4,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A8",
+      "name": "volumen insuficiente",
+      "rep": 3,
+      "seed": 5702,
+      "expected_alert": false,
+      "target_alert": false,
+      "correct_target_outcome": true,
+      "alerts_total": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 4,
+          "negative_rate": 0.2,
+          "topic_counts": {
+            "precio": 7,
+            "otros": 4,
+            "limpieza": 3,
+            "ubicacion": 2,
+            "habitacion": 2,
+            "servicio": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 3,
+          "negative_rate": 0.15,
+          "topic_counts": {
+            "servicio": 2,
+            "precio": 3,
+            "habitacion": 2,
+            "ubicacion": 3,
+            "otros": 7,
+            "limpieza": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.2,
+          "alert_threshold": 0.4,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 4,
+          "negative_rate": 0.2,
+          "topic_counts": {
+            "precio": 5,
+            "limpieza": 3,
+            "otros": 2,
+            "habitacion": 4,
+            "servicio": 2,
+            "ubicacion": 4
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.175,
+          "alert_threshold": 0.375,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 2,
+          "negative_count": 1,
+          "negative_rate": 0.5,
+          "topic_counts": {
+            "limpieza": 1,
+            "otros": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.1833,
+          "alert_threshold": 0.3833,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A8",
+      "name": "volumen insuficiente",
+      "rep": 4,
+      "seed": 5703,
+      "expected_alert": false,
+      "target_alert": false,
+      "correct_target_outcome": true,
+      "alerts_total": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 3,
+          "negative_rate": 0.15,
+          "topic_counts": {
+            "precio": 4,
+            "habitacion": 3,
+            "limpieza": 5,
+            "ubicacion": 5,
+            "otros": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 4,
+          "negative_rate": 0.2,
+          "topic_counts": {
+            "habitacion": 4,
+            "otros": 3,
+            "servicio": 3,
+            "limpieza": 3,
+            "precio": 4,
+            "ubicacion": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.15,
+          "alert_threshold": 0.35,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 4,
+          "negative_rate": 0.2,
+          "topic_counts": {
+            "precio": 1,
+            "servicio": 3,
+            "limpieza": 2,
+            "ubicacion": 6,
+            "habitacion": 5,
+            "otros": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.175,
+          "alert_threshold": 0.375,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 2,
+          "negative_count": 1,
+          "negative_rate": 0.5,
+          "topic_counts": {
+            "precio": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.1833,
+          "alert_threshold": 0.3833,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A8",
+      "name": "volumen insuficiente",
+      "rep": 5,
+      "seed": 5704,
+      "expected_alert": false,
+      "target_alert": false,
+      "correct_target_outcome": true,
+      "alerts_total": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 4,
+          "negative_rate": 0.2,
+          "topic_counts": {
+            "precio": 3,
+            "habitacion": 7,
+            "limpieza": 6,
+            "servicio": 3,
+            "ubicacion": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 3,
+          "negative_rate": 0.15,
+          "topic_counts": {
+            "otros": 5,
+            "precio": 6,
+            "ubicacion": 3,
+            "servicio": 1,
+            "habitacion": 3,
+            "limpieza": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.2,
+          "alert_threshold": 0.4,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 5,
+          "negative_rate": 0.25,
+          "topic_counts": {
+            "habitacion": 4,
+            "servicio": 5,
+            "ubicacion": 3,
+            "limpieza": 4,
+            "precio": 3,
+            "otros": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.175,
+          "alert_threshold": 0.375,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 2,
+          "negative_count": 1,
+          "negative_rate": 0.5,
+          "topic_counts": {
+            "ubicacion": 1,
+            "otros": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.2,
+          "alert_threshold": 0.4,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A9",
+      "name": "aumento desde base alta",
+      "rep": 1,
+      "seed": 5800,
+      "expected_alert": true,
+      "target_alert": false,
+      "correct_target_outcome": false,
+      "alerts_total": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 12,
+          "negative_rate": 0.6,
+          "topic_counts": {
+            "limpieza": 6,
+            "otros": 3,
+            "precio": 3,
+            "servicio": 2,
+            "ubicacion": 3,
+            "habitacion": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 6,
+          "negative_rate": 0.3,
+          "topic_counts": {
+            "ubicacion": 5,
+            "precio": 7,
+            "limpieza": 3,
+            "otros": 2,
+            "servicio": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.6,
+          "alert_threshold": 0.8,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 8,
+          "negative_rate": 0.4,
+          "topic_counts": {
+            "precio": 5,
+            "servicio": 2,
+            "limpieza": 2,
+            "otros": 4,
+            "habitacion": 4,
+            "ubicacion": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.45,
+          "alert_threshold": 0.65,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 20,
+          "negative_count": 12,
+          "negative_rate": 0.6,
+          "topic_counts": {
+            "ubicacion": 4,
+            "limpieza": 5,
+            "otros": 4,
+            "habitacion": 3,
+            "precio": 3,
+            "servicio": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.4333,
+          "alert_threshold": 0.6333,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A9",
+      "name": "aumento desde base alta",
+      "rep": 2,
+      "seed": 5801,
+      "expected_alert": true,
+      "target_alert": false,
+      "correct_target_outcome": false,
+      "alerts_total": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 11,
+          "negative_rate": 0.55,
+          "topic_counts": {
+            "otros": 4,
+            "precio": 2,
+            "ubicacion": 7,
+            "servicio": 3,
+            "limpieza": 4
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 5,
+          "negative_rate": 0.25,
+          "topic_counts": {
+            "servicio": 3,
+            "otros": 5,
+            "ubicacion": 2,
+            "precio": 4,
+            "habitacion": 3,
+            "limpieza": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.55,
+          "alert_threshold": 0.75,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 9,
+          "negative_rate": 0.45,
+          "topic_counts": {
+            "precio": 1,
+            "habitacion": 8,
+            "otros": 3,
+            "limpieza": 3,
+            "servicio": 4,
+            "ubicacion": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.4,
+          "alert_threshold": 0.6,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 20,
+          "negative_count": 12,
+          "negative_rate": 0.6,
+          "topic_counts": {
+            "ubicacion": 4,
+            "limpieza": 5,
+            "precio": 5,
+            "servicio": 5,
+            "habitacion": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.4167,
+          "alert_threshold": 0.6167,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A9",
+      "name": "aumento desde base alta",
+      "rep": 3,
+      "seed": 5802,
+      "expected_alert": true,
+      "target_alert": false,
+      "correct_target_outcome": false,
+      "alerts_total": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 9,
+          "negative_rate": 0.45,
+          "topic_counts": {
+            "otros": 2,
+            "habitacion": 8,
+            "limpieza": 2,
+            "precio": 3,
+            "ubicacion": 3,
+            "servicio": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 10,
+          "negative_rate": 0.5,
+          "topic_counts": {
+            "limpieza": 5,
+            "precio": 5,
+            "habitacion": 5,
+            "ubicacion": 4,
+            "otros": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.45,
+          "alert_threshold": 0.65,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 6,
+          "negative_rate": 0.3,
+          "topic_counts": {
+            "otros": 6,
+            "limpieza": 5,
+            "ubicacion": 2,
+            "servicio": 4,
+            "habitacion": 2,
+            "precio": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.475,
+          "alert_threshold": 0.675,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 20,
+          "negative_count": 9,
+          "negative_rate": 0.45,
+          "topic_counts": {
+            "ubicacion": 3,
+            "precio": 6,
+            "otros": 3,
+            "habitacion": 3,
+            "servicio": 2,
+            "limpieza": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.4167,
+          "alert_threshold": 0.6167,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A9",
+      "name": "aumento desde base alta",
+      "rep": 4,
+      "seed": 5803,
+      "expected_alert": true,
+      "target_alert": false,
+      "correct_target_outcome": false,
+      "alerts_total": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 7,
+          "negative_rate": 0.35,
+          "topic_counts": {
+            "limpieza": 6,
+            "otros": 7,
+            "ubicacion": 2,
+            "habitacion": 2,
+            "servicio": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 5,
+          "negative_rate": 0.25,
+          "topic_counts": {
+            "precio": 8,
+            "otros": 2,
+            "ubicacion": 1,
+            "limpieza": 6,
+            "servicio": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.35,
+          "alert_threshold": 0.55,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 9,
+          "negative_rate": 0.45,
+          "topic_counts": {
+            "habitacion": 6,
+            "limpieza": 3,
+            "servicio": 4,
+            "otros": 2,
+            "ubicacion": 3,
+            "precio": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.3,
+          "alert_threshold": 0.5,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 20,
+          "negative_count": 10,
+          "negative_rate": 0.5,
+          "topic_counts": {
+            "servicio": 5,
+            "precio": 5,
+            "limpieza": 2,
+            "otros": 3,
+            "ubicacion": 3,
+            "habitacion": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.35,
+          "alert_threshold": 0.55,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A9",
+      "name": "aumento desde base alta",
+      "rep": 5,
+      "seed": 5804,
+      "expected_alert": true,
+      "target_alert": false,
+      "correct_target_outcome": false,
+      "alerts_total": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "reports": 4,
+      "complete_reports": 4,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 8,
+          "negative_rate": 0.4,
+          "topic_counts": {
+            "servicio": 3,
+            "otros": 2,
+            "habitacion": 2,
+            "precio": 6,
+            "ubicacion": 2,
+            "limpieza": 5
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W03",
+          "review_count": 20,
+          "negative_count": 9,
+          "negative_rate": 0.45,
+          "topic_counts": {
+            "servicio": 2,
+            "precio": 5,
+            "otros": 3,
+            "limpieza": 4,
+            "habitacion": 4,
+            "ubicacion": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.4,
+          "alert_threshold": 0.6,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W04",
+          "review_count": 20,
+          "negative_count": 7,
+          "negative_rate": 0.35,
+          "topic_counts": {
+            "habitacion": 3,
+            "limpieza": 5,
+            "servicio": 1,
+            "precio": 5,
+            "ubicacion": 3,
+            "otros": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.425,
+          "alert_threshold": 0.625,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        },
+        {
+          "week": "2026-W05",
+          "review_count": 20,
+          "negative_count": 12,
+          "negative_rate": 0.6,
+          "topic_counts": {
+            "otros": 3,
+            "servicio": 3,
+            "ubicacion": 3,
+            "habitacion": 2,
+            "precio": 3,
+            "limpieza": 6
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": 0.4,
+          "alert_threshold": 0.6,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A10",
+      "name": "sin historial",
+      "rep": 1,
+      "seed": 5900,
+      "expected_alert": false,
+      "target_alert": false,
+      "correct_target_outcome": true,
+      "alerts_total": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "reports": 1,
+      "complete_reports": 1,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 13,
+          "negative_rate": 0.65,
+          "topic_counts": {
+            "precio": 5,
+            "habitacion": 5,
+            "ubicacion": 3,
+            "limpieza": 2,
+            "otros": 4,
+            "servicio": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A10",
+      "name": "sin historial",
+      "rep": 2,
+      "seed": 5901,
+      "expected_alert": false,
+      "target_alert": false,
+      "correct_target_outcome": true,
+      "alerts_total": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "reports": 1,
+      "complete_reports": 1,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 13,
+          "negative_rate": 0.65,
+          "topic_counts": {
+            "otros": 8,
+            "limpieza": 1,
+            "habitacion": 3,
+            "servicio": 3,
+            "precio": 2,
+            "ubicacion": 3
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A10",
+      "name": "sin historial",
+      "rep": 3,
+      "seed": 5902,
+      "expected_alert": false,
+      "target_alert": false,
+      "correct_target_outcome": true,
+      "alerts_total": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "reports": 1,
+      "complete_reports": 1,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 15,
+          "negative_rate": 0.75,
+          "topic_counts": {
+            "precio": 5,
+            "ubicacion": 6,
+            "limpieza": 3,
+            "habitacion": 4,
+            "servicio": 1,
+            "otros": 1
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A10",
+      "name": "sin historial",
+      "rep": 4,
+      "seed": 5903,
+      "expected_alert": false,
+      "target_alert": false,
+      "correct_target_outcome": true,
+      "alerts_total": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "reports": 1,
+      "complete_reports": 1,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 14,
+          "negative_rate": 0.7,
+          "topic_counts": {
+            "ubicacion": 2,
+            "habitacion": 6,
+            "limpieza": 4,
+            "servicio": 4,
+            "precio": 2,
+            "otros": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    },
+    {
+      "scenario": "A10",
+      "name": "sin historial",
+      "rep": 5,
+      "seed": 5904,
+      "expected_alert": false,
+      "target_alert": false,
+      "correct_target_outcome": true,
+      "alerts_total": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "reports": 1,
+      "complete_reports": 1,
+      "report_completeness": 1.0,
+      "precision": 0.0,
+      "reports_detail": [
+        {
+          "week": "2026-W02",
+          "review_count": 20,
+          "negative_count": 13,
+          "negative_rate": 0.65,
+          "topic_counts": {
+            "otros": 6,
+            "servicio": 2,
+            "ubicacion": 4,
+            "habitacion": 2,
+            "limpieza": 4,
+            "precio": 2
+          },
+          "alert": false,
+          "alert_reason": null,
+          "line_base": null,
+          "alert_threshold": null,
+          "limitations": "La demo usa reseñas simuladas; la alerta no representa un hotel real."
+        }
+      ]
+    }
+  ]
+}

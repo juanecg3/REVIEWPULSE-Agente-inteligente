@@ -1,0 +1,483 @@
+{
+  "scenario_tests": [
+    {
+      "scenario": "S1 positiva común",
+      "runs": 5,
+      "passed": 5,
+      "rate": 1.0,
+      "mean": 1,
+      "stdev": 0.0,
+      "details": [
+        {
+          "passed": true,
+          "rejected_as_expected": false,
+          "log_has_cycle": true
+        },
+        {
+          "passed": true,
+          "rejected_as_expected": false,
+          "log_has_cycle": true
+        },
+        {
+          "passed": true,
+          "rejected_as_expected": false,
+          "log_has_cycle": true
+        },
+        {
+          "passed": true,
+          "rejected_as_expected": false,
+          "log_has_cycle": true
+        },
+        {
+          "passed": true,
+          "rejected_as_expected": false,
+          "log_has_cycle": true
+        }
+      ]
+    },
+    {
+      "scenario": "S2 negativa común",
+      "runs": 5,
+      "passed": 5,
+      "rate": 1.0,
+      "mean": 1,
+      "stdev": 0.0,
+      "details": [
+        {
+          "passed": true,
+          "rejected_as_expected": false,
+          "log_has_cycle": true
+        },
+        {
+          "passed": true,
+          "rejected_as_expected": false,
+          "log_has_cycle": true
+        },
+        {
+          "passed": true,
+          "rejected_as_expected": false,
+          "log_has_cycle": true
+        },
+        {
+          "passed": true,
+          "rejected_as_expected": false,
+          "log_has_cycle": true
+        },
+        {
+          "passed": true,
+          "rejected_as_expected": false,
+          "log_has_cycle": true
+        }
+      ]
+    },
+    {
+      "scenario": "S3 reseña muy corta",
+      "runs": 5,
+      "passed": 5,
+      "rate": 1.0,
+      "mean": 1,
+      "stdev": 0.0,
+      "details": [
+        {
+          "passed": true,
+          "rejected_as_expected": false,
+          "log_has_cycle": true
+        },
+        {
+          "passed": true,
+          "rejected_as_expected": false,
+          "log_has_cycle": true
+        },
+        {
+          "passed": true,
+          "rejected_as_expected": false,
+          "log_has_cycle": true
+        },
+        {
+          "passed": true,
+          "rejected_as_expected": false,
+          "log_has_cycle": true
+        },
+        {
+          "passed": true,
+          "rejected_as_expected": false,
+          "log_has_cycle": true
+        }
+      ]
+    },
+    {
+      "scenario": "S4 varios aspectos",
+      "runs": 5,
+      "passed": 5,
+      "rate": 1.0,
+      "mean": 1,
+      "stdev": 0.0,
+      "details": [
+        {
+          "passed": true,
+          "rejected_as_expected": false,
+          "log_has_cycle": true
+        },
+        {
+          "passed": true,
+          "rejected_as_expected": false,
+          "log_has_cycle": true
+        },
+        {
+          "passed": true,
+          "rejected_as_expected": false,
+          "log_has_cycle": true
+        },
+        {
+          "passed": true,
+          "rejected_as_expected": false,
+          "log_has_cycle": true
+        },
+        {
+          "passed": true,
+          "rejected_as_expected": false,
+          "log_has_cycle": true
+        }
+      ]
+    },
+    {
+      "scenario": "S5 tildes, puntuación y emoji",
+      "runs": 5,
+      "passed": 5,
+      "rate": 1.0,
+      "mean": 1,
+      "stdev": 0.0,
+      "details": [
+        {
+          "passed": true,
+          "rejected_as_expected": false,
+          "log_has_cycle": true
+        },
+        {
+          "passed": true,
+          "rejected_as_expected": false,
+          "log_has_cycle": true
+        },
+        {
+          "passed": true,
+          "rejected_as_expected": false,
+          "log_has_cycle": true
+        },
+        {
+          "passed": true,
+          "rejected_as_expected": false,
+          "log_has_cycle": true
+        },
+        {
+          "passed": true,
+          "rejected_as_expected": false,
+          "log_has_cycle": true
+        }
+      ]
+    },
+    {
+      "scenario": "S6 texto largo",
+      "runs": 5,
+      "passed": 5,
+      "rate": 1.0,
+      "mean": 1,
+      "stdev": 0.0,
+      "details": [
+        {
+          "passed": true,
+          "rejected_as_expected": false,
+          "log_has_cycle": true
+        },
+        {
+          "passed": true,
+          "rejected_as_expected": false,
+          "log_has_cycle": true
+        },
+        {
+          "passed": true,
+          "rejected_as_expected": false,
+          "log_has_cycle": true
+        },
+        {
+          "passed": true,
+          "rejected_as_expected": false,
+          "log_has_cycle": true
+        },
+        {
+          "passed": true,
+          "rejected_as_expected": false,
+          "log_has_cycle": true
+        }
+      ]
+    },
+    {
+      "scenario": "S7 faltan metadatos opcionales",
+      "runs": 5,
+      "passed": 5,
+      "rate": 1.0,
+      "mean": 1,
+      "stdev": 0.0,
+      "details": [
+        {
+          "passed": true,
+          "rejected_as_expected": false,
+          "log_has_cycle": true
+        },
+        {
+          "passed": true,
+          "rejected_as_expected": false,
+          "log_has_cycle": true
+        },
+        {
+          "passed": true,
+          "rejected_as_expected": false,
+          "log_has_cycle": true
+        },
+        {
+          "passed": true,
+          "rejected_as_expected": false,
+          "log_has_cycle": true
+        },
+        {
+          "passed": true,
+          "rejected_as_expected": false,
+          "log_has_cycle": true
+        }
+      ]
+    },
+    {
+      "scenario": "S8 campos extra desconocidos",
+      "runs": 5,
+      "passed": 5,
+      "rate": 1.0,
+      "mean": 1,
+      "stdev": 0.0,
+      "details": [
+        {
+          "passed": true,
+          "rejected_as_expected": false,
+          "log_has_cycle": true
+        },
+        {
+          "passed": true,
+          "rejected_as_expected": false,
+          "log_has_cycle": true
+        },
+        {
+          "passed": true,
+          "rejected_as_expected": false,
+          "log_has_cycle": true
+        },
+        {
+          "passed": true,
+          "rejected_as_expected": false,
+          "log_has_cycle": true
+        },
+        {
+          "passed": true,
+          "rejected_as_expected": false,
+          "log_has_cycle": true
+        }
+      ]
+    },
+    {
+      "scenario": "S9 texto vacío (falla esperada)",
+      "runs": 5,
+      "passed": 5,
+      "rate": 1.0,
+      "mean": 1,
+      "stdev": 0.0,
+      "details": [
+        {
+          "passed": true,
+          "rejected_as_expected": true,
+          "error": "La reseña no puede estar vacía",
+          "log_has_cycle": true,
+          "log_has_rejection": true
+        },
+        {
+          "passed": true,
+          "rejected_as_expected": true,
+          "error": "La reseña no puede estar vacía",
+          "log_has_cycle": true,
+          "log_has_rejection": true
+        },
+        {
+          "passed": true,
+          "rejected_as_expected": true,
+          "error": "La reseña no puede estar vacía",
+          "log_has_cycle": true,
+          "log_has_rejection": true
+        },
+        {
+          "passed": true,
+          "rejected_as_expected": true,
+          "error": "La reseña no puede estar vacía",
+          "log_has_cycle": true,
+          "log_has_rejection": true
+        },
+        {
+          "passed": true,
+          "rejected_as_expected": true,
+          "error": "La reseña no puede estar vacía",
+          "log_has_cycle": true,
+          "log_has_rejection": true
+        }
+      ]
+    },
+    {
+      "scenario": "S10 texto solo espacios (falla esperada)",
+      "runs": 5,
+      "passed": 5,
+      "rate": 1.0,
+      "mean": 1,
+      "stdev": 0.0,
+      "details": [
+        {
+          "passed": true,
+          "rejected_as_expected": true,
+          "error": "La reseña no puede estar vacía",
+          "log_has_cycle": true,
+          "log_has_rejection": true
+        },
+        {
+          "passed": true,
+          "rejected_as_expected": true,
+          "error": "La reseña no puede estar vacía",
+          "log_has_cycle": true,
+          "log_has_rejection": true
+        },
+        {
+          "passed": true,
+          "rejected_as_expected": true,
+          "error": "La reseña no puede estar vacía",
+          "log_has_cycle": true,
+          "log_has_rejection": true
+        },
+        {
+          "passed": true,
+          "rejected_as_expected": true,
+          "error": "La reseña no puede estar vacía",
+          "log_has_cycle": true,
+          "log_has_rejection": true
+        },
+        {
+          "passed": true,
+          "rejected_as_expected": true,
+          "error": "La reseña no puede estar vacía",
+          "log_has_cycle": true,
+          "log_has_rejection": true
+        }
+      ]
+    }
+  ],
+  "scenario_summary": {
+    "total_scenarios": 10,
+    "repetitions_each": 5,
+    "total_attempts": 50,
+    "passed": 50,
+    "expected_behavior_pass_rate": 1.0
+  },
+  "simulator_repetitions": [
+    {
+      "seed": 101,
+      "processed": 28,
+      "reports": 4,
+      "alerts": 1,
+      "weeks": [
+        "2026-W02",
+        "2026-W03",
+        "2026-W04",
+        "2026-W05"
+      ],
+      "simulation_joint_accuracy": 0.5714285714285714,
+      "target_week": "2026-W05",
+      "target_week_alert": false,
+      "target_week_truth_negative_rate": 0.7142857142857143,
+      "non_target_alerts": 1
+    },
+    {
+      "seed": 102,
+      "processed": 28,
+      "reports": 4,
+      "alerts": 0,
+      "weeks": [
+        "2026-W02",
+        "2026-W03",
+        "2026-W04",
+        "2026-W05"
+      ],
+      "simulation_joint_accuracy": 0.75,
+      "target_week": "2026-W05",
+      "target_week_alert": false,
+      "target_week_truth_negative_rate": 0.7142857142857143,
+      "non_target_alerts": 0
+    },
+    {
+      "seed": 103,
+      "processed": 28,
+      "reports": 4,
+      "alerts": 1,
+      "weeks": [
+        "2026-W02",
+        "2026-W03",
+        "2026-W04",
+        "2026-W05"
+      ],
+      "simulation_joint_accuracy": 0.6071428571428571,
+      "target_week": "2026-W05",
+      "target_week_alert": true,
+      "target_week_truth_negative_rate": 0.5714285714285714,
+      "non_target_alerts": 0
+    },
+    {
+      "seed": 104,
+      "processed": 28,
+      "reports": 4,
+      "alerts": 2,
+      "weeks": [
+        "2026-W02",
+        "2026-W03",
+        "2026-W04",
+        "2026-W05"
+      ],
+      "simulation_joint_accuracy": 0.5357142857142857,
+      "target_week": "2026-W05",
+      "target_week_alert": false,
+      "target_week_truth_negative_rate": 0.7142857142857143,
+      "non_target_alerts": 2
+    },
+    {
+      "seed": 105,
+      "processed": 28,
+      "reports": 4,
+      "alerts": 2,
+      "weeks": [
+        "2026-W02",
+        "2026-W03",
+        "2026-W04",
+        "2026-W05"
+      ],
+      "simulation_joint_accuracy": 0.8571428571428571,
+      "target_week": "2026-W05",
+      "target_week_alert": true,
+      "target_week_truth_negative_rate": 0.5714285714285714,
+      "non_target_alerts": 1
+    }
+  ],
+  "simulator_summary": {
+    "runs": 5,
+    "mean_processed": 28,
+    "sd_processed": 0.0,
+    "mean_reports": 4,
+    "sd_reports": 0.0,
+    "mean_alerts": 1.2,
+    "sd_alerts": 0.8366600265340756,
+    "mean_joint_accuracy": 0.6642857142857143,
+    "sd_joint_accuracy": 0.1350547885799217,
+    "target_week_detection_rate": 0.4,
+    "target_week_precision": 0.3333333333333333,
+    "mean_non_target_alerts": 0.8,
+    "sd_non_target_alerts": 0.8366600265340756
+  }
+}
