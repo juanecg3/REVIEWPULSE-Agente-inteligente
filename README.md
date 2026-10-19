@@ -43,19 +43,6 @@ Archivos de resultado:
 - `run_tripmaml/execution.jsonl`: percepciones, predicciones y acciones con marcas de tiempo UTC.
 - `run_tripmaml/summary.json`: resumen de ejecución.
 
-### Resultado de la ejecución recibida
-
-Con los archivos compartidos, el sistema entrenó con **291 reseñas utilizables** (una fila sin etiquetas útiles se omitió) y evaluó **125 reseñas**. No hubo `reviewId` compartidos entre los conjuntos.
-
-| Medida | Resultado | Meta/detalle |
-|---|---:|---|
-| Exactitud de polaridad | 92,8 % | Supera 85 % para esta etiqueta derivada |
-| Macro-F1 de polaridad | 57,2 % | Reporta el efecto del desbalance de clases |
-| Exactitud del tema principal | 52,0 % | No alcanza 85 % |
-| Macro-F1 del tema principal | 18,0 % | El modelo tiene dificultad en clases minoritarias |
-| Exactitud conjunta (tema y polaridad correctos) | 48,0 % | **No alcanza la meta global de 85 %** |
-
-Estas cifras corresponden a una evaluación exploratoria del baseline Naive Bayes y a etiquetas derivadas por mayoría. No equivalen a una evaluación con etiquetas originales por oración/aspecto ni validan BETO. Deben reportarse con esta limitación.
 
 ## Demostración del entorno estocástico
 
@@ -82,7 +69,7 @@ Las correcciones se guardan en `learned_feedback.csv` y se cargan en ejecuciones
 3. **Acción:** `act()` registra percepción, decisión y acción en JSONL. `weekly_reports()` calcula resúmenes y alerta si una tasa negativa semanal supera en 20 puntos porcentuales la línea base y se supera el mínimo de reseñas.
 4. **Aprendizaje:** las anotaciones del conjunto de entrenamiento ajustan el clasificador; `apply_feedback()` añade correcciones humanas posteriores.
 
-## Pruebas de Fase 3
+## Pruebas
 
 El protocolo, los umbrales, los 10 escenarios, cinco repeticiones por escenario y el análisis de resultados están en `fase3_protocolo.md` y `fase3_pruebas.md`. Para reproducir la batería funcional y las cinco corridas del simulador:
 
