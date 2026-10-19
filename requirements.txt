@@ -1,1 +1,2 @@
-# Sin dependencias externas. Python 3.10+.
+# Instalar con: python -m pip install -r requirements.txt
+streamlit>=1.36,<2.0
