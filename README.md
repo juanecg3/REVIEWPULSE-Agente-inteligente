@@ -71,7 +71,7 @@ Las correcciones se guardan en `learned_feedback.csv` y se cargan en ejecuciones
 
 ## Pruebas
 
-El protocolo, los umbrales, los 10 escenarios, cinco repeticiones por escenario y el análisis de resultados están en `fase3_protocolo.md` y `fase3_pruebas.md`. Para reproducir la batería funcional y las cinco corridas del simulador:
+Para reproducir la batería funcional y las cinco corridas del simulador:
 
 ```bash
 python scenario_tests.py
